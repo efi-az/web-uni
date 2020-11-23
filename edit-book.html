@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Book</title>
+    <link rel="stylesheet" href="css/bulma.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="navbar has-shadow">
+        <div class="navbar-brand">
+            <!-- logo, tagline, burger -->
+            <a href="" class="navbar-item">
+                <img src="./images/logo.png" alt="">
+            </a>
+            <div class="navbar-burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <div class="navbar-menu">
+            <!-- username, drop down, ... -->
+            <div class="navbar-start">
+                <div class="navbar-item">
+                    <small>Publishing at the speed of technology</small>
+                </div>
+            </div>
+            <div class="navbar-end">
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <div class="navbar-link">
+                        Ali M.Kai
+                    </div>
+                    <div class="navbar-dropdown">
+                        <div class="navbar-item">
+                            <div>
+                                <span class="icon is-small">
+                                    <i class="fa fa-user"></i>
+                                </span>
+                                Profile
+                            </div>
+                        </div>
+                        <div class="navbar-item">
+                            <div>
+                                <span class="icon is-small">
+                                    <i class="fa fa-bug"></i>
+                                </span>
+                                Bug
+                            </div>
+                        </div>
+                        <div class="navbar-item">
+                            <div>
+                                <span class="icon is-small">
+                                    <i class="fa fa-sign-out"></i>
+                                </span>
+                                Sign Out
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="section">
+        <div class="columns">
+            <div class="column is-4-tablet is-3-desktop is-2-widescreen">
+                <!-- The Side bar -->
+                <nav class="menu">
+                    <p class="menu-label">
+                        Main Menu
+                    </p>
+                    <ul class="menu-list">
+                        <li>
+                            <a href="#">
+                                <span class="icon">
+                                    <i class="fa fa-tachometer"></i>
+                                </span>
+                                Dashboard
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="icon">
+                                    <i class="fa fa-book"></i>
+                                </span>
+                                Books
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="icon">
+                                    <i class="fa fa-clock-o"></i>
+                                </span>
+                                Customers
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="icon">
+                                    <i class="fa fa-file"></i>
+                                </span>
+                                Orders
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="column">
+                <!-- The Right Part Top Level-->
+                <nav class="breadcrumb" aria-label="breadcrumb">
+                    <ul>
+                        <li><a href="#">Books</a></li>
+                        <li class="is-active"><a href="#" aria-current="page">New Book</a></li>
+                    </ul>
+                </nav>
+
+                <!-- The Right Books Grid-->
+                <form>
+                    <div class="columns">
+                        <div class="column">
+                            <div class="field">
+                                <label class="label">Title</label>
+                                <div class="control">
+                                    <input type="text" class="input is-large" placeholder="Designing with Bulma">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="columns is-desktop">
+                        <div class="column">
+                            <div class="field">
+                                <label class="label">Price</label>
+                                <div class="control has-icons-left">
+                                    <span class="icon is-small"><i class="fa fa-dollar"></i></span>
+                                    <input type="number" class="input" placeholder="22.99" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="field">
+                                <label class="label">Pages</label>
+                                <div class="control">
+                                    <input type="number" class="input" placeholder="220" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="field">
+                                <label class="label">ISBN</label>
+                                <div class="control">
+                                    <input type="number" class="input" placeholder="124587451" required>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label>Cover Image</label>
+                        <div class="control">
+                            <img src="./images/tensorflow.jpg" alt="">
+                        </div>
+                        <div class="control">
+                            <div class="file has-name">
+                                <label class="file-label">
+                                    <input type="file" class="file-input" name="resume">
+                                    <span class="file-cta">
+                                        <span class="file-icon">
+                                            <i class="fa fa-upload"></i>
+                                        </span>
+                                        <span class="file-label">
+                                            Choose a file...
+                                        </span>
+                                    </span>
+                                    <span class="file-name">
+                                        Screen Shot 2017-07.png
+                                    </span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="buttons">
+                            <button class="button is-success is-medium">Create Book</button>
+                            <button class="button is-light is-medium">Cancel</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+</body>
+
+</html>

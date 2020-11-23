@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/bulma.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="navbar has-shadow">
+        <div class="navbar-brand">
+            <!-- logo, tagline, burger -->
+            <a href="" class="navbar-item">
+                <img src="./images/logo.png" alt="">
+            </a>
+            <div class="navbar-burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <div class="navbar-menu">
+            <!-- username, drop down, ... -->
+            <div class="navbar-start">
+                <div class="navbar-item">
+                    <small>Publishing at the speed of technology</small>
+                </div>
+            </div>
+            <div class="navbar-end">
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <div class="navbar-link">
+                        Ali M.Kai 
+                    </div>
+                    <div class="navbar-dropdown">
+                        <div class="navbar-item">
+                            <div>
+                                <span class="icon is-small">
+                                    <i class="fa fa-user"></i>
+                                </span>
+                                Profile
+                            </div>
+                        </div>
+                        <div class="navbar-item">
+                            <div>
+                                <span class="icon is-small">
+                                    <i class="fa fa-bug"></i>
+                                </span>
+                                Bug
+                            </div>
+                        </div>
+                        <div class="navbar-item">
+                            <div>
+                                <span class="icon is-small">
+                                    <i class="fa fa-sign-out"></i>
+                                </span>
+                                Sign Out
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="section">
+        <div class="columns">
+            <div class="column is-4-tablet is-3-desktop is-2-widescreen">
+                <!-- The Side bar -->
+                <nav class="menu">
+                    <p class="menu-label">
+                        Main Menu
+                    </p>
+                    <ul class="menu-list">
+                        <li>
+                            <a href="#">
+                                <span class="icon">
+                                    <i class="fa fa-tachometer"></i>
+                                </span>
+                                Dashboard
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="icon">
+                                    <i class="fa fa-book"></i>
+                                </span>
+                                Books
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="icon">
+                                    <i class="fa fa-clock-o"></i>
+                                </span>
+                                Customers
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="icon">
+                                    <i class="fa fa-file"></i>
+                                </span>
+                                Orders
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="column">
+                <!-- The Right Part Top Level-->
+                <h1 class="title">Books</h1>
+                <nav class="level">
+                    <div class="level-left">
+                        <div class="level-item">
+                            <p class="subtitle is-5">
+                                <strong>6</strong> books found.
+                            </p>
+                        </div>
+                        <div class="level-item">
+                            <a href="#" class="button is-success">
+                                New
+                            </a>
+                        </div>
+                        <div class="level-item">
+                            <div class="field has-addons">
+                                <p class="control">
+                                    <input type="text" class="input" placeholder="book name, ISBN, ...">
+                                </p>
+                                <p class="control">
+                                    <button class="button is-primary">Search</button>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="level-right">
+                        <div class="level-item">
+                            Order By: 
+                        </div>
+                        <div class="level-item">
+                            <div class="select">
+                                <select name="" id="">
+                                    <option value="1">Publish Date</option>
+                                    <option value="1">Book Price</option>
+                                    <option value="1">Page Count</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                <!-- The Right Books Grid-->
+                <div class="columns is-multiline has-text-centered">
+                    <div class="column is-12-tablet is-6-desktop is-4-widescreen">
+                        <article class="box">
+                            <div class="media">
+                                <aside class="media-left">
+                                    <img src="./images/tensorflow.jpg" alt="">
+                                </aside>
+                                <div class="media-content">
+                                    <p class="title is-5 is-spaced is-marginless">
+                                        <a href="edit-book.html">
+                                            TensorFlow For Machine Intelligence
+                                        </a>
+                                    </p>
+                                    <p class="subtitle is-marginless">
+                                        $22.95
+                                    </p>
+                                    <div class="content">
+                                        270 pages 
+                                        <br>
+                                        ISBN: 784513120
+                                        <br>
+                                        <a href="edit-book.html">
+                                            <span></span>
+                                            Edit
+                                        </a>
+                                        <a href="delete-book.html">
+                                            <span></span>
+                                            Delete
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="column is-12-tablet is-6-desktop is-4-widescreen">
+                        <article class="box">
+                            <div class="media">
+                                <aside class="media-left">
+                                    <img src="./images/docker.jpg" alt="">
+                                </aside>
+                                <div class="media-content">
+                                    <p class="title is-5 is-spaced is-marginless">
+                                        <a href="edit-book.html">
+                                            Docker in Production
+                                        </a>
+                                    </p>
+                                    <p class="subtitle is-marginless">
+                                        $27.00
+                                    </p>
+                                    <div class="content">
+                                        158 pages 
+                                        <br>
+                                        ISBN: 458745214
+                                        <br>
+                                        <a href="edit-book.html">
+                                            <span></span>
+                                            Edit
+                                        </a>
+                                        <a href="delete-book.html">
+                                            <span></span>
+                                            Delete
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="column is-12-tablet is-6-desktop is-4-widescreen">
+                        <article class="box">
+                            <div class="media">
+                                <aside class="media-left">
+                                    <img src="./images/gulp.jpg" alt="">
+                                </aside>
+                                <div class="media-content">
+                                    <p class="title is-5 is-spaced is-marginless">
+                                        <a href="edit-book.html">
+                                            Developing a Gulp.js Edge
+                                        </a>
+                                    </p>
+                                    <p class="subtitle is-marginless">
+                                        $32.00
+                                    </p>
+                                    <div class="content">
+                                        158 pages 
+                                        <br>
+                                        ISBN: 458745214
+                                        <br>
+                                        <a href="edit-book.html">
+                                            <span></span>
+                                            Edit
+                                        </a>
+                                        <a href="delete-book.html">
+                                            <span></span>
+                                            Delete
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="column is-12-tablet is-6-desktop is-4-widescreen">
+                        <article class="box">
+                            <div class="media">
+                                <aside class="media-left">
+                                    <img src="./images/swift.jpg" alt="">
+                                </aside>
+                                <div class="media-content">
+                                    <p class="title is-5 is-spaced is-marginless">
+                                        <a href="edit-book.html">
+                                            Learning Swift
+                                        </a>
+                                    </p>
+                                    <p class="subtitle is-marginless">
+                                        $27.00
+                                    </p>
+                                    <div class="content">
+                                        158 pages 
+                                        <br>
+                                        ISBN: 458745214
+                                        <br>
+                                        <a href="edit-book.html">
+                                            <span></span>
+                                            Edit
+                                        </a>
+                                        <a href="delete-book.html">
+                                            <span></span>
+                                            Delete
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="column is-12-tablet is-6-desktop is-4-widescreen">
+                        <article class="box">
+                            <div class="media">
+                                <aside class="media-left">
+                                    <img src="./images/js-framework.jpg" alt="">
+                                </aside>
+                                <div class="media-content">
+                                    <p class="title is-5 is-spaced is-marginless">
+                                        <a href="edit-book.html">
+                                            choosing a javascript Framework
+                                        </a>
+                                    </p>
+                                    <p class="subtitle is-marginless">
+                                        $14.00
+                                    </p>
+                                    <div class="content">
+                                        120 pages 
+                                        <br>
+                                        ISBN: 458745214
+                                        <br>
+                                        <a href="edit-book.html">
+                                            <span></span>
+                                            Edit
+                                        </a>
+                                        <a href="delete-book.html">
+                                            <span></span>
+                                            Delete
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="column is-12-tablet is-6-desktop is-4-widescreen">
+                        <article class="box">
+                            <div class="media">
+                                <aside class="media-left">
+                                    <img src="./images/google-cardboard.jpg" alt="">
+                                </aside>
+                                <div class="media-content">
+                                    <p class="title is-5 is-spaced is-marginless">
+                                        <a href="edit-book.html">
+                                            Google Cardboard Apps
+                                        </a>
+                                    </p>
+                                    <p class="subtitle is-marginless">
+                                        $25.00
+                                    </p>
+                                    <div class="content">
+                                        158 pages 
+                                        <br>
+                                        ISBN: 458745214
+                                        <br>
+                                        <a href="edit-book.html">
+                                            <span></span>
+                                            Edit
+                                        </a>
+                                        <a href="delete-book.html">
+                                            <span></span>
+                                            Delete
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <nav class="pagination">
+                    <a href="" class="pagination-previous">Previous</a>
+                    <a href="" class="pagination-next">Next</a>
+                    <ul class="pagination-list">
+                        <li><a href="" class="pagination-link">1</a></li>
+                        <li><span class="pagination-ellipsis">&hellip;</span></li>
+                        <li><a href="" class="pagination-link">15</a></li>
+                        <li><a href="" class="pagination-link">16</a></li>
+                        <li><a href="" class="pagination-link">17</a></li>
+                        <li><span class="pagination-ellipsis">&hellip;</span></li>
+                        <li><a href="" class="pagination-link">20</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
+    </section>
+    
+    
+</body>
+</html>
